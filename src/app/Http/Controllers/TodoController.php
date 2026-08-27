@@ -2,12 +2,18 @@
 
 namespace App\Http\Controllers;
 
+// 追加
+use App\Todo;
+
 use Illuminate\Http\Request;
 
 class TodoController extends Controller
 {
     public function index()
     {
-        return view('todo.index'); // 修正
+
+        $todo = new Todo();
+          $todos = $todo->all();
+        return view('todo.index'); 
     }
 }
