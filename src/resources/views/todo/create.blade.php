@@ -16,7 +16,7 @@
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="row justify-content-center">
+    <div class="row justify-content-">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">ToDo作成</div>
