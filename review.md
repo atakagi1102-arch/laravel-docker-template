@@ -13,7 +13,10 @@ Illuminate\Database\Eloquent\Collection
 第二引数：その画面にデータを渡す。
 ### index.blade.phpの$todos・$todoに代入されているものは何か
 $todos = Todoテーブルから取得したTodoのデータすべて
+オブジェクト型、入力したデータの値
 $todo = foreachからひとつずつ取り出した値
+オブジェクト型、
+
 ## Todo作成機能
 
 ### Requestクラスのallメソッドは何をしているか
@@ -21,7 +24,7 @@ $todo = foreachからひとつずつ取り出した値
 ### fillメソッドは何をしているか
 渡された配列のキーと値を、モデルの属性に一括でセットする
 ### $fillableは何のために設定しているか
-括で入れていい項目は contentと定めるため。
+fillメソッドで一括で入れる項目はを指定するため。
 ### saveメソッドで実行しているSQLは何か
 INSERT または UPDATE
 ### redirect()->route()は何をしているか
@@ -45,4 +48,4 @@ URLを直接書かなくて済む
 ### @csrfは何のための記述か
 CSRFの対策。Laravelが自動的に CSRFトークンというランダムな値を生成して、フォームに埋め込んでくれる。
 ### {{ }}とは何の省略系か
-phpのecho
+phpのechoの省略形で、結果をHTMLエスケープして画面に表示するための記法
