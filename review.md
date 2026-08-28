@@ -13,9 +13,9 @@ Illuminate\Database\Eloquent\Collection
 第二引数：その画面にデータを渡す。
 ### index.blade.phpの$todos・$todoに代入されているものは何か
 $todos = Todoテーブルから取得したTodoのデータすべて
-オブジェクト型、入力したデータの値
+オブジェクト型、Collectionオブジェクト
 $todo = foreachからひとつずつ取り出した値
-オブジェクト型、
+オブジェクト型、Collectionオブジェクト
 
 ## Todo作成機能
 
