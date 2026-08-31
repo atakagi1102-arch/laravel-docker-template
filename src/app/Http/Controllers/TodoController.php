@@ -40,7 +40,7 @@ class TodoController extends Controller
      
         $todo = $this->todo->find($id);
 
-     return view('todo.show', ['todo' => $todo]);
+        return view('todo.show', ['todo' => $todo]);
 }
 
     public function __construct(Todo $todo)
