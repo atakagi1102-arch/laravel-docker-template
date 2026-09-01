@@ -14,9 +14,7 @@ class TodoController extends Controller
     {
         
         $todos = $this->todo->all();
-
         return view('todo.index', ['todos' => $todos]); // 修正
-
     }
 
     public function create()
@@ -42,7 +40,7 @@ class TodoController extends Controller
 
         return view('todo.show', ['todo' => $todo]);
 }
-
+//ここでまとめてインスタンス化
     public function __construct(Todo $todo)
     {
         $this->todo = $todo;
@@ -53,7 +51,7 @@ class TodoController extends Controller
     // TODO: 編集対象のレコードの情報を持つTodoモデルのインスタンスを取得
         $todo =  $this->todo->find($id);
         return view('todo.edit', ['todo' => $todo]);
-       
+      
 }
 
     public function update(TodoRequest $request, $id) // 第1引数: リクエスト情報の取得　第2引数: ルートパラメータの取得

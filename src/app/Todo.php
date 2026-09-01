@@ -9,7 +9,7 @@ class Todo extends Model
 {
     use SoftDeletes; // 追記
 
-    protected $table = 'todos';//追加
+    protected $table = 'todos';
     
     protected $fillable = [
         'content',
